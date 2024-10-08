@@ -1,0 +1,45 @@
+<Project>
+
+  <PropertyGroup>
+    <NeutralLanguage>pt-BR</NeutralLanguage>
+    <Authors>Felipe Baltazar</Authors>
+    <PackageProjectUrl>https://github.com/felipebaltazar/Maui.TutorialCoachMark</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <IncludeSource>True</IncludeSource>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/felipebaltazar/Maui.TutorialCoachMark</RepositoryUrl>
+    <TutorialCoachMarkPackageIcon>$(MSBuildThisFileDirectory)icon.png</TutorialCoachMarkPackageIcon>
+    <TutorialCoachMarkLicenseFile>$(MSBuildThisFileDirectory)LICENSE</TutorialCoachMarkLicenseFile>
+    <PackageTags>tutorial;maui;dotnet-maui;xaml;ios;android;coachmark;mark;ui</PackageTags>
+    <Copyright>Copyright Felipe Baltazar 2024</Copyright>
+    <Description>
+      Create a beautiful and easy tutorial for your .net maui application.
+    </Description>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)$(PackageReadmeFile)"
+          Visible="False"
+          Pack="True"
+          PackagePath="" />
+    <None Include="$(TutorialCoachMarkPackageIcon)"
+          Visible="False"
+          Pack="True"
+          PackagePath="" />
+    <None Include="$(TutorialCoachMarkLicenseFile)"
+          Visible="False"
+          Pack="True"
+          PackagePath="" />
+    <SourceRoot Include="$(MSBuildThisFileDirectory)" />
+    <PackageReference Include="Nerdbank.GitVersioning" 
+                      Version="3.5.107"
+                      PrivateAssets="all" />
+  </ItemGroup>
+
+
+</Project>
