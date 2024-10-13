@@ -5,7 +5,7 @@ namespace Maui.TutorialCoachMark;
 
 internal class TutorialService : ITutorialService
 {
-    public static ITutorialService Instance
+    public static TutorialService Instance
     {
         get; private set;
     }
@@ -15,7 +15,13 @@ internal class TutorialService : ITutorialService
         Instance = this;
     }
 
-    public async Task ShowTutorialAsync(IList<View> coachMarkViews)
+    public Task ShowTutorialAsync(Page parent)
+    {
+        var coachMarkViews = Tutorial.GetCoachMarksForPage(parent);
+        return ShowTutorialAsync(coachMarkViews);
+    }
+
+    internal async Task ShowTutorialAsync(IList<View> coachMarkViews)
     {
         var instance = MopupService.Instance;
         var currentTutorialPage = instance.PopupStack.FirstOrDefault(p => p.GetType() == typeof(TutorialPage));

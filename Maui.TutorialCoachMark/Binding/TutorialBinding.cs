@@ -66,7 +66,7 @@ public static class Tutorial
         return new BeatAnimation(500, null);
     }
 
-    
+
     #endregion
 
     #region EnableTutorial
@@ -152,6 +152,9 @@ public static class Tutorial
 
     #endregion
 
+    internal static List<View> GetCoachMarksForPage(Page page) =>
+        _tutorialMap.ContainsKey(page) ? _tutorialMap[page] : new List<View>(0);
+
     private static async void OnPageAppearing(object? sender, EventArgs e)
     {
         if (sender is not Page page)
@@ -165,5 +168,4 @@ public static class Tutorial
         await TutorialService.Instance.ShowTutorialAsync(coachMarkViews);
         page.Appearing -= OnPageAppearing;
     }
-
 }
