@@ -79,7 +79,7 @@ public static class MauiProgram
 
 <p align="center">
 	<kbd>
-		<img src="https://github.com/felipebaltazar/Maui.TutorialCoachMark/Images/sample.gif" alt="home page" width=45% />
+		<img src="https://github.com/felipebaltazar/Maui.TutorialCoachMark/blob/main/Images/sample.gif" alt="home page" width=45% />
 	</kbd>
 </p>
 
