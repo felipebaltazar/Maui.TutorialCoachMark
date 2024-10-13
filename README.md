@@ -87,4 +87,4 @@ public static class MauiProgram
 
 ## Repo Activity
 
-![Alt](https://repobeats.axiom.co/api/embed/e3457a9dc9131c33ca38ceb2203bfffa67864080.svg "Repo activity analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/c403bea6cd53d846917c19507a78080847b09ce6.svg "Repobeats analytics image")
