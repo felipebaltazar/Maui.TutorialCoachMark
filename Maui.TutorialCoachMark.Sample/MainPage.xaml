@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.TutorialCoachMark.Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:t="clr-namespace:Maui.TutorialCoachMark;assembly=Maui.TutorialCoachMark"
+    x:Name="page"
+    t:Tutorial.EnableTutorial="true">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Image
+                Aspect="AspectFit"
+                HeightRequest="185"
+                SemanticProperties.Description="dot net bot in a race car number eight"
+                Source="dotnet_bot.png" />
+
+            <Label
+                t:Tutorial.TutorialOrder="1"
+                t:Tutorial.TutorialParent="{Reference page}"
+                SemanticProperties.HeadingLevel="Level1"
+                Style="{StaticResource Headline}"
+                Text="Hello, World!">
+                <t:Tutorial.CoachMarkView>
+                    <StackLayout>
+                        <Label
+                            FontAttributes="Bold"
+                            Text="Describe your elements!"
+                            TextColor="White" />
+                    </StackLayout>
+                </t:Tutorial.CoachMarkView>
+            </Label>
+
+            <Label
+                t:Tutorial.TutorialOrder="3"
+                t:Tutorial.TutorialParent="{Reference page}"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.HeadingLevel="Level2"
+                Style="{StaticResource SubHeadline}"
+                Text="Welcome to &#10;.NET Multi-platform App UI">
+                <t:Tutorial.CoachMarkView>
+                    <Frame
+                        BackgroundColor="BlueViolet"
+                        CornerRadius="16"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start">
+                        <StackLayout>
+                            <Label Text="You can define a custom view to the coachmark" />
+                            <Label Text="🤩💕" />
+                        </StackLayout>
+                    </Frame>
+                </t:Tutorial.CoachMarkView>
+            </Label>
+
+            <Button
+                x:Name="CounterBtn"
+                t:Tutorial.TutorialOrder="2"
+                t:Tutorial.TutorialParent="{Reference page}"
+                t:Tutorial.ViewAnimation="{t:DefaultAnimation Fade}"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Click me">
+                <t:Tutorial.CoachMarkView>
+                    <Frame
+                        BackgroundColor="Black"
+                        CornerRadius="16"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start">
+                        <StackLayout>
+                            <Label Text="Explain about your UI" TextColor="White" />
+                        </StackLayout>
+                    </Frame>
+                </t:Tutorial.CoachMarkView>
+            </Button>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
