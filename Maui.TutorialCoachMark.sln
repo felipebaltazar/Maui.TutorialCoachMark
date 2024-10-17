@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.TutorialCoachMark", "Maui.TutorialCoachMark\Maui.TutorialCoachMark.csproj", "{88515A4D-CC40-4B56-A01B-938743893CD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.TutorialCoachMark.Analyzers", "Maui.TutorialCoachMark.Analyzers\Maui.TutorialCoachMark.Analyzers.csproj", "{60B15528-0AD7-498F-A3B9-AB1A82C80DEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{88515A4D-CC40-4B56-A01B-938743893CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88515A4D-CC40-4B56-A01B-938743893CD1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{88515A4D-CC40-4B56-A01B-938743893CD1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{60B15528-0AD7-498F-A3B9-AB1A82C80DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B15528-0AD7-498F-A3B9-AB1A82C80DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B15528-0AD7-498F-A3B9-AB1A82C80DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B15528-0AD7-498F-A3B9-AB1A82C80DEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
