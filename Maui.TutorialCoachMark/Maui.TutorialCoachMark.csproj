@@ -21,6 +21,7 @@
   
   <ItemGroup>
     <None Include="build\*.targets" Pack="True" PackagePath="buildTransitive" />
+    <None Include="..\Maui.TutorialCoachMark.Analyzers\bin\$(Configuration)\netstandard2.0\Maui.TutorialCoachMark.Analyzers.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
   </ItemGroup>
   
 	<ItemGroup>
