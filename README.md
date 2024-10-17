@@ -46,9 +46,8 @@ public static class MauiProgram
     x:Class="Maui.TutorialCoachMark.Sample.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:t="clr-namespace:Maui.TutorialCoachMark;assembly=Maui.TutorialCoachMark"
     x:Name="page"
-    t:Tutorial.EnableTutorial="true">
+    Tutorial.EnableTutorial="true">
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
@@ -58,17 +57,17 @@ public static class MauiProgram
                 Source="dotnet_bot.png" />
 
             <Label
-                t:Tutorial.TutorialOrder="1"
-                t:Tutorial.TutorialParent="{Reference page}"
+                Tutorial.TutorialOrder="1"
+                Tutorial.TutorialParent="{Reference page}"
                 Text="Hello, World!">
-                <t:Tutorial.CoachMarkView>
+                <Tutorial.CoachMarkView>
                     <StackLayout>
                         <Label
                             FontAttributes="Bold"
                             Text="Describe your elements!"
                             TextColor="White" />
                     </StackLayout>
-                </t:Tutorial.CoachMarkView>
+                </Tutorial.CoachMarkView>
             </Label>
     </ScrollView>
 </ContentPage>
