@@ -1,4 +1,4 @@
-next-version: 1.1.0
+next-version: 9.0.0
 branches:
   release:
     regex: releases?[/-]

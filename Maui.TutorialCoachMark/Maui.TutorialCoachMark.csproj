@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
 
 		<OutputType>library</OutputType>
 		<RootNamespace>Maui.TutorialCoachMark</RootNamespace>
@@ -11,7 +11,7 @@
 		<Nullable>enable</Nullable>
     <PackageId>TutorialCoachMark.Maui</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.2-pre</Version>
+    <Version>9.0.0-pre</Version>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
